@@ -10,6 +10,7 @@ spec:
       # AWS Load Balancer Controller triggers
       service.beta.kubernetes.io/aws-load-balancer-type: nlb
       service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing" # Use 'internal' for private subnets
+      service.beta.kubernetes.io/aws-load-balancer-cross-zone-load-balancing-enabled: "true"
   listeners:
   - allowedRoutes:
       namespaces:
