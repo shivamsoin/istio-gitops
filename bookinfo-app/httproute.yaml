@@ -7,6 +7,7 @@ spec:
   parentRefs:
     - name: nlb-gateway
       namespace: istio-ingress
+      sectionName: https
   rules:
     - matches:
         - path: {type: Exact, value: /}
