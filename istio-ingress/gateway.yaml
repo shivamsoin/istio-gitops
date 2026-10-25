@@ -23,9 +23,3 @@ spec:
     name: https
     port: 443
     protocol: HTTPS
-    tls:
-      certificateRefs:
-      - group: ""
-        kind: Secret
-        name: tls-cert-secret
-      mode: Terminate
